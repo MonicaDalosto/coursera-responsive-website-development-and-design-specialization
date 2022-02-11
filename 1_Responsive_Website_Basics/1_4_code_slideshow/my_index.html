@@ -1,0 +1,73 @@
+<html>
+	<head>
+		<title>Mônica Image Gallery</title>
+
+		<!-- import bootstrap -->
+		<link rel="stylesheet"
+			  type="text/css"
+			  href="bootstrap.css"
+		      />
+
+		<!-- import our own stylesheet -->
+		<link rel="stylesheet"
+			  type="text/css"
+			  href="styles.css"
+		      />	
+
+		<!-- import jQuery -->
+		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+	</head>
+	<body>
+	<div class="container">
+		<h1>Image Gallery</h1>
+		<!-- This is the template from the Class: 2_3_4_putting_data_into_templates, that I change the jQuery code into Javascript: -->
+		<!--
+		   These are the thumbnail images. They pretty much the same as the last example from the previous module, except I have added an id to each image which includes the number of that image.
+		-->
+		<div class="row">
+			<div class="col-md-3">
+				<img id="image1" class="crop-img" src="img_1.jpg" alt="graffittied building"/> 
+			</div>
+			<div class="col-md-3">
+				<img id="image2" class="crop-img" src="img_3.jpg" alt="display of cheese"/> 
+			</div>
+			<div class="col-md-3">
+				<img id="image3" class="crop-img" src="img_4.jpg" alt="synethesizer workshop"/> 
+			</div>
+			<div class="col-md-3">
+				<img id="image4" class="crop-img" src="img_5.jpg" alt="City night"/> 
+			</div>
+		</div>
+		<!--
+			this is the large image which is
+			on a row of its own. 
+			The code is similar to the last example
+			of the previous module, but I have
+			added a backwards and forwards button
+		-->
+		<div class="row">
+			<div class="col-md-1">
+				<button id="backward">&lt;</button>
+			</div>
+			<div class="col-md-10">
+				<img id="bigImage" class="large-img" alt="graffittied building"/> 
+			</div>
+			<div class="col-md-1">
+				<button id="forward">&gt;</button>
+			</div>
+		</div>
+	</div>
+
+	
+	<script src="my_javascript.js"></script>
+
+	</body>
+</html>
+
+
+
+
+
+
+
